@@ -622,3 +622,35 @@ form h3{margin-top:0}
   .section-title.accent-gradient,.services-heading{font-size:clamp(1.35rem,1rem + 1vw,1.8rem)}
   .hero-neo-text h1{font-size:clamp(1.6rem,1rem + 2vw,2.2rem)}
 }
+
+/* ===== VAGUES & FONDS ALTERNÉS ===== */
+
+/* Fonds alternés blanc / bleu très clair */
+.sec-white { background: #ffffff; }
+.sec-blue  { background: #eef6ff; }
+
+/* La section expérience hérite du fond bleu */
+.sec-blue.experience-section { background: #eef6ff; }
+
+/* Diviseur vague */
+.wave-divider {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  /* compense le padding-left du menu latéral pour que la vague soit vraiment pleine largeur */
+  position: relative;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
+/* Supprime le fond par défaut des sections qui avaient leur propre bg */
+.services-dark { background: inherit; }
+#portfolio     { background: inherit; }
+#formations    { background: inherit; }

@@ -9,14 +9,11 @@
 <body>
   <a class="skip-link" href="#home">Aller au contenu</a>
 
-  <!-- Header latéral -->
   <header class="side-header" role="banner">
     <a class="brand" href="#home">DOUCOURE Kani</a>
-
     <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
-
     <nav id="nav" class="side-nav" aria-label="Navigation principale">
       <a href="#home" class="active">
         <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
@@ -49,16 +46,15 @@
     </nav>
   </header>
 
-  <!-- Bouton retour en haut -->
   <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
 
-  <!-- HERO -->
+  <!-- ========== HERO ========== -->
   <section id="home" class="hero-neo" aria-label="Accueil">
     <div class="container hero-neo-grid">
       <div class="hero-neo-text">
         <span class="badge pulse">Disponible en alternance — octobre 2026</span>
         <h1>Bonjour, je m'appelle <span class="accent">Kani Doucouré</span></h1>
-        <p class="subtitle">Je suis&nbsp;<span class="typing">futur Data ingénieur</span></p>
+        <p class="subtitle">&nbsp;<span class="typing">Futur Data ingénieur</span></p>
         <div class="cta-row">
           <a class="btn primary" href="docs/CV_Kani_DOUCOURE_Informatique_Alternance.pdf" download>
             <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5z"/></svg>
@@ -74,7 +70,6 @@
           <a class="social" href="#contact">Me contacter</a>
         </div>
       </div>
-
       <div class="hero-neo-visual">
         <div class="hex-wrap">
           <img class="hex" src="images/photo-kani.jpg" alt="Photo de Kani Doucouré">
@@ -83,8 +78,15 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section" aria-labelledby="titre-about">
+  <!-- vague hero → about (blanc vers blanc) -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section sec-white" aria-labelledby="titre-about">
     <div class="container">
       <h2 id="titre-about" class="section-title accent-gradient">Présentation</h2>
       <div class="about-grid pro">
@@ -97,29 +99,33 @@
             avec un rythme d'une semaine en entreprise et une semaine en formation.
           </p>
         </article>
-
         <aside class="card inner-ring lang-card reveal">
           <h3>Langues</h3>
           <ul class="lang-list">
-            <li><span>Français — courant</span>                     <span class="meter lv-5" aria-label="niveau 5/5"></span></li>
-            <li><span>Anglais — intermédiaire</span>                <span class="meter lv-3" aria-label="niveau 3/5"></span></li>
-            <li><span>Arabe — intermédiaire</span>                  <span class="meter lv-3" aria-label="niveau 3/5"></span></li>
-            <li><span>Soninké, Bambara — langue maternelle</span>   <span class="meter lv-5" aria-label="niveau 5/5"></span></li>
+            <li><span>Français — courant</span>                    <span class="meter lv-5" aria-label="niveau 5/5"></span></li>
+            <li><span>Anglais — intermédiaire</span>               <span class="meter lv-3" aria-label="niveau 3/5"></span></li>
+            <li><span>Arabe — intermédiaire</span>                 <span class="meter lv-3" aria-label="niveau 3/5"></span></li>
+            <li><span>Soninké, Bambara — langue maternelle</span>  <span class="meter lv-5" aria-label="niveau 5/5"></span></li>
           </ul>
         </aside>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section id="services" class="section services-dark" aria-labelledby="services-title">
+  <!-- vague about → services (blanc → bleu clair) -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C360,70 1080,0 1440,70 L1440,70 L0,70 Z" fill="#eef6ff"/>
+    </svg>
+  </div>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section sec-blue services-dark" aria-labelledby="services-title">
     <div class="container">
       <h2 id="services-title" class="services-heading">
         <span class="accent-word">Mes Compétences</span>
       </h2>
-
       <div class="services-grid" role="list">
-
         <article class="service-card" role="listitem">
           <div class="icon-wrap">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4Zm0 2c3.87 0 6 .99 6 2s-2.13 2-6 2-6-.99-6-2 2.13-2 6-2Zm0 14c-3.87 0-6-.99-6-2v-2.06C7.34 15.6 9.57 16 12 16s4.66-.4 6-1.06V17c0 1.01-2.13 2-6 2Zm0-5c-3.87 0-6-.99-6-2v-2.06C7.34 10.6 9.57 11 12 11s4.66-.4 6-1.06V12c0 1.01-2.13 2-6 2Z"/></svg>
@@ -130,7 +136,6 @@
             <span>SQL</span><span>MariaDB</span><span>MySQL</span><span>Redis</span><span>Qdrant</span><span>FastAPI</span><span>Python</span><span>Java</span><span>PHP</span><span>TypeScript</span><span>JavaScript</span><span>HTML/CSS</span>
           </div>
         </article>
-
         <article class="service-card" role="listitem">
           <div class="icon-wrap">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 3H3v7h7V3Zm11 0h-7v7h7V3ZM10 14H3v7h7v-7Zm11 3h-7v4h7v-4Zm-3-6h-2v2h2v-2ZM7 11H5v2h2v-2Z"/></svg>
@@ -141,7 +146,6 @@
             <span>GitLab</span><span>GitHub</span><span>MindView</span><span>Documentation</span><span>Organisation</span>
           </div>
         </article>
-
         <article class="service-card" role="listitem">
           <div class="icon-wrap">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3ZM8 11c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3Zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13Zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.96 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5Z"/></svg>
@@ -152,13 +156,19 @@
             <span>Communication</span><span>Travail d'équipe</span><span>Collaboration</span><span>Transmission</span>
           </div>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- OUTILS -->
-  <section id="tools" class="section">
+  <!-- vague services → outils (bleu clair → blanc) -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,70 C360,0 1080,70 1440,0 L1440,70 L0,70 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- ========== OUTILS ========== -->
+  <section id="tools" class="section sec-white">
     <div class="container">
       <h2 class="section-title accent-gradient">Outils que j'utilise</h2>
       <div class="tools-panel tilt-3d">
@@ -200,8 +210,15 @@
     </div>
   </section>
 
-  <!-- EXPÉRIENCE -->
-  <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+  <!-- vague outils → expérience (blanc → bleu clair) -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,35 C240,0 480,70 720,35 C960,0 1200,70 1440,35 L1440,70 L0,70 Z" fill="#eef6ff"/>
+    </svg>
+  </div>
+
+  <!-- ========== EXPÉRIENCE ========== -->
+  <section id="experience" class="section sec-blue experience-section" aria-labelledby="experience-title">
     <div class="container">
       <h2 id="experience-title" class="section-title accent-gradient">Expérience professionnelle</h2>
 
@@ -219,16 +236,11 @@
           création d'un assistant IA, sécurisation d'APIs, optimisation de bases de données,
           administration de serveurs et automatisation des sauvegardes.
         </p>
-
-        <!-- Indication clique -->
         <p class="accordion-hint">Cliquez sur une mission pour voir les détails</p>
-
         <div class="mission-grid">
-
-          <!-- Mission 1 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">🤖</span>
               <span class="mission-title">Assistant IA conversationnel</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -247,11 +259,9 @@
               </div>
             </div>
           </article>
-
-          <!-- Mission 2 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">🔒</span>
               <span class="mission-title">Sécurisation des APIs</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -267,11 +277,9 @@
               </div>
             </div>
           </article>
-
-          <!-- Mission 3 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">🖥️</span>
               <span class="mission-title">Administration système</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -287,11 +295,9 @@
               </div>
             </div>
           </article>
-
-          <!-- Mission 4 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">📊</span>
               <span class="mission-title">Optimisation des bases de données</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -305,11 +311,9 @@
               </div>
             </div>
           </article>
-
-          <!-- Mission 5 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">📋</span>
               <span class="mission-title">Gestion de projet & accompagnement</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -325,7 +329,6 @@
               </div>
             </div>
           </article>
-
         </div>
       </article>
 
@@ -344,15 +347,11 @@
           de l'API backend, à l'administration de la base de données et à l'amélioration
           de l'interface utilisateur.
         </p>
-
         <p class="accordion-hint">Cliquez sur une mission pour voir les détails</p>
-
         <div class="mission-grid">
-
-          <!-- Mission 1 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">🗄️</span>
               <span class="mission-title">Base de données</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -368,11 +367,9 @@
               </div>
             </div>
           </article>
-
-          <!-- Mission 2 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">🎨</span>
               <span class="mission-title">Frontend</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -387,11 +384,9 @@
               </div>
             </div>
           </article>
-
-          <!-- Mission 3 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">⚙️</span>
               <span class="mission-title">Backend</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -406,11 +401,9 @@
               </div>
             </div>
           </article>
-
-          <!-- Mission 4 -->
           <article class="mission-card accordion-card">
             <button class="accordion-trigger" type="button" aria-expanded="false">
-              <span class="mission-icon"></span>
+              <span class="mission-icon">📋</span>
               <span class="mission-title">Gestion de projet</span>
               <span class="accordion-arrow" aria-hidden="true">›</span>
             </button>
@@ -426,26 +419,29 @@
               </div>
             </div>
           </article>
-
         </div>
       </article>
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
-  <section id="portfolio" class="section" aria-labelledby="portfolio-title">
+  <!-- vague expérience → projets (bleu clair → blanc) -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C480,70 960,0 1440,70 L1440,70 L0,70 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- ========== PROJETS ========== -->
+  <section id="portfolio" class="section sec-white" aria-labelledby="portfolio-title">
     <div class="container">
       <h2 id="portfolio-title" class="section-title accent-gradient">Projets</h2>
-
       <div class="project-grid">
-
-        <!-- Projet 1 -->
         <article class="project-card reveal">
           <div class="project-cover gallery" data-gallery>
             <img src="images/acceil 1.png" alt="Application météo - accueil" class="active" />
             <img src="images/acceille.png" alt="Application météo - carte" />
             <img src="images/Tableau du bord 1.png" alt="Application météo - tableau de bord" />
-            <img src="images/Tableau du bord 2.png" alt="Application météo - tableau de bord 2" />
+            <img src="images/tableau du bord 2.png" alt="Application météo - tableau de bord 2" />
             <img src="images/connexion.png" alt="Connexion" />
             <img src="images/connexion 2.png" alt="Connexion 2" />
             <img src="images/historique modif.png" alt="Historique" />
@@ -464,7 +460,6 @@
           </div>
         </article>
 
-        <!-- Projet 2 -->
         <article class="project-card reveal">
           <div class="project-cover gallery" data-gallery>
             <img src="images/powerbi/image1.png" alt="Power BI - vue 1" class="active" />
@@ -486,10 +481,10 @@
           </div>
         </article>
 
-        <!-- Projet 3 -->
         <article class="project-card reveal">
           <div class="project-cover gallery" data-gallery>
             <img src="images/reseau/image3.png" alt="Services réseau" class="active" />
+            <img src="images/reseau/image5.png" alt="Services réseau 2" />
             <button class="gallery-btn prev" type="button" aria-label="Image précédente">‹</button>
             <button class="gallery-btn next" type="button" aria-label="Image suivante">›</button>
           </div>
@@ -505,13 +500,11 @@
           </div>
         </article>
 
-        <!-- Projet 4 -->
         <article class="project-card reveal">
           <div class="project-cover gallery" data-gallery>
             <img src="images/biodiverssite/Neo4J.png" alt="Biodiversité - Neo4J" class="active" />
             <img src="images/biodiverssite/Neo4J2.png" alt="Biodiversité - Neo4J 2" />
             <img src="images/biodiverssite/API.png" alt="Biodiversité - API" />
-            <img src="images/biodiv-4.png" alt="Biodiversité - vue 4" />
             <button class="gallery-btn prev" type="button" aria-label="Image précédente">‹</button>
             <button class="gallery-btn next" type="button" aria-label="Image suivante">›</button>
           </div>
@@ -526,19 +519,22 @@
             <div class="tag-row"><span>Python</span><span>SQL</span><span>Supabase</span><span>Neo4J</span><span>Redis</span><span>Qdrant</span></div>
           </div>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- FORMATIONS -->
-  <section id="formations" class="section" aria-labelledby="formations-title">
+  <!-- vague projets → formations (blanc → bleu clair) -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,35 C360,70 720,0 1080,70 C1200,84 1320,56 1440,35 L1440,70 L0,70 Z" fill="#eef6ff"/>
+    </svg>
+  </div>
+
+  <!-- ========== FORMATIONS ========== -->
+  <section id="formations" class="section sec-blue" aria-labelledby="formations-title">
     <div class="container">
       <h2 id="formations-title" class="section-title accent-gradient">Diplômes & Formations</h2>
-
       <div class="timeline">
-
-        <!-- CNAM -->
         <article class="timeline-card-logo reveal">
           <div class="formation-logo-wrap">
             <img src="images/logos/cnam.jpg" alt="Logo CNAM" class="formation-logo">
@@ -550,14 +546,9 @@
             </div>
             <p class="formation-school">CNAM — Paris</p>
             <p class="formation-desc">Formation d'ingénieur spécialisée en systèmes d'information</p>
-            <div class="formation-tags">
-              <span>Dès septembre</span>
-              
-            </div>
+            <div class="formation-tags"><span>Dès septembre</span></div>
           </div>
         </article>
-
-        <!-- UPEC / IUT -->
         <article class="timeline-card-logo reveal">
           <div class="formation-logo-wrap">
             <img src="images/logos/upec-iut.png" alt="Logo UPEC IUT Créteil-Vitry" class="formation-logo">
@@ -569,41 +560,38 @@
             </div>
             <p class="formation-school">IUT de Créteil-Vitry — Université Paris-Est Créteil</p>
             <p class="formation-desc">Parcours : Administration, gestion et exploitation des données.</p>
-            <div class="formation-tags">
-              <span>En cours</span>
-              
-            </div>
+            <div class="formation-tags"><span>En cours</span></div>
           </div>
         </article>
-
-        <!-- Lycée -->
         <article class="timeline-card-logo reveal">
-         
-        <div class="formation-logo-wrap">
-          <img src="images/logos/lycee.png" alt="Logo Lycée Paris 14" class="formation-logo">
-        </div>
+          <div class="formation-logo-wrap">
+            <img src="images/logos/lycee.png" alt="Logo Lycée Paris 14" class="formation-logo">
+          </div>
           <div class="formation-body">
             <div class="formation-top">
               <h3>Baccalauréat Général</h3>
               <span class="formation-date">2020 — 2023</span>
             </div>
             <p class="formation-school">Lycée d'adultes de la Ville de Paris — Paris 14</p>
-            <div class="formation-tags">
-              <span>Obtenu</span>
-            </div>
+            <div class="formation-tags"><span>Obtenu</span></div>
           </div>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section" aria-labelledby="titre-contact">
+  <!-- vague formations → contact (bleu clair → blanc) -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,70 C480,0 960,70 1440,0 L1440,70 L0,70 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section sec-white" aria-labelledby="titre-contact">
     <div class="container">
       <h2 id="titre-contact" class="section-title accent-gradient">Contact</h2>
       <div class="contact-layout">
-
         <div class="contact-card">
           <span class="card-title">Coordonnées</span>
           <div class="profile">
@@ -619,7 +607,6 @@
             <li><span class="ico">in</span><a href="https://www.linkedin.com/in/kani-doucour%C3%A9-6a21052b5" target="_blank" rel="noopener">LinkedIn</a></li>
           </ul>
         </div>
-
         <div class="contact-card">
           <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="9d52b53a-a514-4801-ba2f-623bbc764a59">
@@ -640,7 +627,6 @@
             <button class="btn primary" type="submit">Envoyer</button>
           </form>
         </div>
-
       </div>
     </div>
   </section>
