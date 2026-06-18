@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Expérience — Kani Doucouré</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="side-header" role="banner"></header>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <div id="main" class="page-hero">
+    <div class="container">
+      <span class="page-hero-kicker">Expérience professionnelle</span>
+      <h1>Mes <span>Stages</span></h1>
+      <p>Deux stages réalisés dans des environnements techniques exigeants.</p>
+    </div>
+  </div>
+  <div class="wave-divider"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z" fill="#ffffff"/></svg></div>
+
+  <section class="section sec-white">
+    <div class="container">
+
+      <!-- DIAGORISK -->
+      <article class="experience-card reveal">
+        <div class="experience-header">
+          <div>
+            <h3>Stage — DiagoRisk</h3>
+            <p class="experience-subtitle">Data, backend, APIs, bases de données, IA et administration système</p>
+          </div>
+          <span class="experience-date">2026</span>
+        </div>
+        <p class="experience-intro">
+          Durant mon stage chez DiagoRisk, j'ai travaillé sur des missions techniques concrètes :
+          création d'un assistant IA, sécurisation d'APIs, optimisation de bases de données,
+          administration de serveurs et automatisation des sauvegardes.
+        </p>
+        <p class="accordion-hint">Cliquez sur une mission pour voir les détails</p>
+        <div class="mission-grid">
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">🤖</span>
+              <span class="mission-title">Assistant IA conversationnel</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Objectif :</strong> développer un assistant IA conversationnel dédié aux risques climatiques agricoles.</li>
+                <li><strong>Architecture :</strong> mise en place d'une base vectorielle (Qdrant), d'une mémoire conversationnelle (Redis) et d'une base SQL (MariaDB).</li>
+                <li><strong>Données :</strong> importation, nettoyage et structuration de fichiers CSV.</li>
+                <li><strong>IA générative :</strong> intégration du modèle Claude pour générer des réponses en langage naturel.</li>
+                <li><strong>Backend :</strong> développement d'APIs avec FastAPI.</li>
+                <li><strong>Déploiement :</strong> mise en production sur un serveur Ubuntu avec Docker.</li>
+                <li><strong>Résultat :</strong> une interface de chatbot moderne permettant aux utilisateurs d'obtenir des réponses rapidement.</li>
+              </ul>
+              <div class="tech-tags"><span>Python</span><span>FastAPI</span><span>Qdrant</span><span>Redis</span><span>MariaDB</span><span>LlamaIndex</span><span>Docker</span><span>React</span></div>
+            </div>
+          </article>
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">🔒</span>
+              <span class="mission-title">Sécurisation des APIs</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Authentification :</strong> création de tokens sécurisés pour contrôler l'accès aux APIs.</li>
+                <li><strong>Protection des données :</strong> requêtes paramétrées pour limiter les risques d'injection.</li>
+                <li><strong>Vérification :</strong> validation des tokens côté API avant l'exécution des requêtes.</li>
+                <li><strong>Sécurisation :</strong> passage de certaines requêtes sensibles en méthode POST.</li>
+              </ul>
+              <div class="tech-tags"><span>PHP</span><span>R Plumber</span><span>MySQL</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">🖥️</span>
+              <span class="mission-title">Administration système</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Infrastructure :</strong> connexion et communication entre deux serveurs OVH.</li>
+                <li><strong>Réseau sécurisé :</strong> mise en place de tunnels SSH persistants.</li>
+                <li><strong>Sauvegardes :</strong> automatisation des sauvegardes serveur.</li>
+                <li><strong>Sécurité :</strong> renouvellement et gestion des certificats SSL.</li>
+              </ul>
+              <div class="tech-tags"><span>Ubuntu</span><span>Rocky Linux</span><span>SSH</span><span>Bash</span></div>
+            </div>
+          </article>
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">📊</span>
+              <span class="mission-title">Optimisation des bases de données</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Optimisation :</strong> création d'index SQL pour accélérer les recherches.</li>
+                <li><strong>Gestion des données :</strong> manipulation de grandes tables contenant plusieurs millions de lignes.</li>
+              </ul>
+              <div class="tech-tags"><span>MariaDB</span><span>MySQL</span><span>DBeaver</span><span>phpMyAdmin</span></div>
+            </div>
+          </article>
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">📋</span>
+              <span class="mission-title">Gestion de projet & accompagnement</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Organisation :</strong> participation à la planification et au suivi des missions techniques.</li>
+                <li><strong>Documentation :</strong> rédaction de procédures techniques avec PowerPoint.</li>
+                <li><strong>Transmission :</strong> accompagnement des collaborateurs sur les outils.</li>
+                <li><strong>Collaboration :</strong> échanges réguliers avec les équipes pour proposer des solutions adaptées.</li>
+              </ul>
+              <div class="tech-tags"><span>Gestion de projet</span><span>Documentation</span><span>Communication</span></div>
+            </div>
+          </article>
+
+        </div>
+      </article>
+
+      <div style="height:32px;"></div>
+
+      <!-- ELICAP -->
+      <article class="experience-card reveal">
+        <div class="experience-header">
+          <div>
+            <h3>Stage — ELICAP</h3>
+            <p class="experience-subtitle">Développement d'application, API backend et gestion de base de données</p>
+          </div>
+          <span class="experience-date">2025</span>
+        </div>
+        <p class="experience-intro">
+          Durant mon stage chez ELICAP, à Andrésy, j'ai participé au développement
+          d'une application de gestion du recrutement. J'ai contribué à la création
+          de l'API backend, à l'administration de la base de données et à l'amélioration
+          de l'interface utilisateur.
+        </p>
+        <p class="accordion-hint">Cliquez sur une mission pour voir les détails</p>
+        <div class="mission-grid">
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">🗄️</span>
+              <span class="mission-title">Base de données</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Administration :</strong> gestion de la base de données avec MySQL Workbench.</li>
+                <li><strong>Maintenance :</strong> correction et mise à jour des structures SQL.</li>
+                <li><strong>Modélisation :</strong> création et modification de tables relationnelles.</li>
+                <li><strong>Intégrité :</strong> vérification des relations et de la cohérence entre les données.</li>
+              </ul>
+              <div class="tech-tags"><span>MySQL</span><span>MySQL Workbench</span><span>SQL</span></div>
+            </div>
+          </article>
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">🎨</span>
+              <span class="mission-title">Frontend</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Développement :</strong> création de formulaires de candidature et de compétences.</li>
+                <li><strong>Ergonomie :</strong> amélioration de l'interface utilisateur.</li>
+                <li><strong>Résultat :</strong> les informations sont stockées en base et transmises automatiquement par e-mail.</li>
+              </ul>
+              <div class="tech-tags"><span>Angular</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div>
+            </div>
+          </article>
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">⚙️</span>
+              <span class="mission-title">Backend</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Développement :</strong> contribution à la création et à l'évolution de l'API backend.</li>
+                <li><strong>Données :</strong> récupération et traitement depuis la base MySQL.</li>
+                <li><strong>Architecture :</strong> utilisation du modèle MVC (Model - View - Controller).</li>
+              </ul>
+              <div class="tech-tags"><span>C#</span><span>ASP.NET Core</span><span>API</span></div>
+            </div>
+          </article>
+
+          <article class="mission-card accordion-card">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span class="mission-icon">📋</span>
+              <span class="mission-title">Gestion de projet</span>
+              <span class="accordion-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="accordion-body" hidden>
+              <ul>
+                <li><strong>Analyse du besoin :</strong> compréhension du processus de recrutement.</li>
+                <li><strong>Organisation :</strong> création d'un organigramme pour représenter les étapes du projet.</li>
+                <li><strong>Collaboration :</strong> réunions fréquentes avec les équipes RH et informatique.</li>
+                <li><strong>Résultat :</strong> processus plus clair et structuré pour la gestion des candidatures.</li>
+              </ul>
+              <div class="tech-tags"><span>Gestion de projet</span><span>Organisation</span><span>Analyse</span></div>
+            </div>
+          </article>
+
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="wave-divider"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,70 C480,0 960,70 1440,0 L1440,70 L0,70 Z" fill="#ffffff"/></svg></div>
+  <footer class="footer"><div class="container">© <span id="year"></span> Kani Doucouré — Tous droits réservés</div></footer>
+  <script src="js/nav.js" defer></script>
+</body>
+</html>
