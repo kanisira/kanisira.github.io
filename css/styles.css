@@ -69,9 +69,9 @@ body { padding-left: clamp(160px,20vw,230px); padding-top: 0; }
 /* ===== PAGE HEADER (titre de page) ===== */
 .page-hero {
   padding: 32px 0 24px;
-  background: radial-gradient(ellipse at 20% 50%, rgba(58,134,246,.4) 0%, transparent 60%),
-              radial-gradient(ellipse at 80% 20%, rgba(235,83,255,.3) 0%, transparent 55%),
-              linear-gradient(135deg, #0f1635 0%, #1a1040 50%, #0d0a2e 100%);
+  background: radial-gradient(ellipse at 20% 50%, rgba(58,134,246,.45) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(235,83,255,.35) 0%, transparent 55%),
+              linear-gradient(180deg, #0f1635 0%, #1a1040 60%, #000000 100%);
   color: #eaf2ff;
   position: relative;
   overflow: hidden;

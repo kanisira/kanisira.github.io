@@ -135,7 +135,35 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Icônes outils
+// Effet typing sur la page d'accueil
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.querySelector('.typing-text');
+  if (!el) return;
+  const texts = ['Futur Data ingénieur', 'passionnée par la data', 'en recherche d\'alternance'];
+  let ti = 0, ci = 0, deleting = false;
+
+  function type() {
+    const current = texts[ti];
+    if (!deleting) {
+      el.textContent = current.slice(0, ci + 1);
+      ci++;
+      if (ci === current.length) {
+        deleting = true;
+        setTimeout(type, 1800);
+        return;
+      }
+    } else {
+      el.textContent = current.slice(0, ci - 1);
+      ci--;
+      if (ci === 0) {
+        deleting = false;
+        ti = (ti + 1) % texts.length;
+      }
+    }
+    setTimeout(type, deleting ? 55 : 90);
+  }
+  type();
+});
 document.addEventListener('DOMContentLoaded', () => {
   function dbIcon()      { return `<svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3" fill="currentColor"/><path fill="currentColor" d="M4 8v6c0 1.66 3.58 3 8 3s8-1.34 8-3V8c-1.41 1.13-4.68 1.9-8 1.9S5.41 9.13 4 8z"/></svg>`; }
   function serverIcon()  { return `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5" fill="currentColor"/><rect x="3" y="14" width="18" height="6" rx="1.5" fill="currentColor"/><circle cx="7" cy="7" r="1" fill="#fff"/><circle cx="7" cy="17" r="1" fill="#fff"/></svg>`; }
