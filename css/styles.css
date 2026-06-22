@@ -347,3 +347,6 @@ h2{margin:0 0 12px}
   *{animation-duration:.01ms!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
 }
+
+.profile { display: grid; grid-template-columns: 100px 1fr; gap: 16px; align-items: center; margin-bottom: 16px; }
+.profile img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; object-position: center top; box-shadow: var(--shadow); border: 3px solid #e2e8f0; }
