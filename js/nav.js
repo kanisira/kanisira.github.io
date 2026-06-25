@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const el = document.querySelector('.typing-text');
   if (!el) return;
-  const texts = ['Futur Data ingénieur', 'passionnée par la data', 'en recherche d\'alternance'];
+ const texts = ['Futur ingénieur en informatique', 'Passionnée par l\'informatique', 'En recherche d\'alternance'];
   let ti = 0, ci = 0, deleting = false;
 
   function type() {
