@@ -117,6 +117,39 @@
       .competence-block { padding: 20px; }
       .niveau-badge { margin-left: 0; }
     }
+    .competence-block {
+      cursor: pointer;
+    }
+
+    .competence-content {
+      display: none;
+      margin-top: 20px;
+      cursor: default;
+    }
+
+    .competence-block.active .competence-content {
+      display: block;
+    }
+
+    .competence-header {
+      cursor: pointer;
+    }
+
+    .competence-header::after {
+      content: "+";
+      margin-left: 12px;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #3a86f6;
+    }
+
+    .competence-block.active .competence-header::after {
+      content: "−";
+    }
+
+    .competence-block.active {
+      border-color: #3a86f6;
+    }
   </style>
 </head>
 <body>
@@ -126,9 +159,9 @@
 
   <div id="main" class="page-hero">
     <div class="container">
-      <span class="page-hero-kicker">BUT Informatique — Parcours ARED</span>
+      <span class="page-hero-kicker">BUT Informatique</span>
       <h1>Mes <span>Compétences</span></h1>
-      <p>Analyse réflexive de l'acquisition du niveau "Confirmé" des 3 compétences de BUT3 Informatique, démontrée à travers mes stages et projets académiques.</p>
+      <p>Analyse réflexive de l'acquisition du niveau "Confirmé" des 6 compétences de BUT3 Informatique, démontrée à travers mes stages et projets académiques.</p>
     </div>
   </div>
   <div class="wave-divider"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z" fill="#ffffff"/></svg></div>
@@ -145,52 +178,55 @@
           <span class="niveau-badge">Niveau Confirmé</span>
         </div>
 
-        <p class="competence-desc">
-          Concevoir, administrer et exploiter des bases de données relationnelles et non relationnelles.
-          Optimiser les requêtes, structurer les données et mettre en place des solutions de stockage adaptées aux besoins métier.
-        </p>
-
-        <div class="tech-tags" style="margin-bottom:20px;">
-          <span>SQL</span><span>MariaDB</span><span>MySQL</span><span>Redis</span>
-          <span>Qdrant</span><span>Neo4J</span><span>Supabase</span><span>Oracle SQL</span>
-        </div>
-
-        <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
-        <div class="preuve-grid">
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage DiagoRisk — 2026</div>
-            <h4>Optimisation de bases de données</h4>
-            <p>Création d'index SQL sur des tables de plusieurs millions de lignes, réduisant significativement les temps de requête. Administration complète avec MariaDB et DBeaver.</p>
-          </div>
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage DiagoRisk — 2026</div>
-            <h4>Architecture multi-modèles pour l'IA</h4>
-            <p>Mise en place d'une base vectorielle Qdrant pour la recherche sémantique, Redis pour la mémoire conversationnelle et MariaDB pour le stockage structuré.</p>
-          </div>
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage ELICAP — 2025</div>
-            <h4>Administration MySQL</h4>
-            <p>Gestion complète de la base de données de recrutement : modélisation des tables, vérification des contraintes d'intégrité, correction et mise à jour des structures SQL.</p>
-          </div>
-          <div class="preuve-card projet">
-            <div class="preuve-label">Projet académique — UPEC</div>
-            <h4>Application météo & BDD SYNOP</h4>
-            <p>Création et exploitation d'une base de données météorologique à partir de l'API SYNOP. Conception du schéma relationnel, import et visualisation des données.</p>
-          </div>
-          <div class="preuve-card projet">
-            <div class="preuve-label">Projet académique — UPEC</div>
-            <h4>Biodiversité aéroportuaire</h4>
-            <p>Mise en œuvre d'une architecture multi-modèles : SQL (Supabase), graphe (Neo4J) et vectorielle (Qdrant) pour la gestion et l'analyse de données environnementales.</p>
-          </div>
-        </div>
-
-        <div class="reflexion-box">
-          <div class="reflexion-title">Analyse réflexive</div>
-          <p>
-            À travers mes deux stages et mes projets académiques, j'ai acquis une maîtrise complète du cycle de vie des données : de la modélisation à l'optimisation en passant par l'exploitation.
-            Chez DiagoRisk, j'ai travaillé sur des volumes importants de données réelles, ce qui m'a permis de comprendre les enjeux de performance et de fiabilité en contexte professionnel.
-            La diversité des technologies utilisées (relationnelle, vectorielle, graphe, clé-valeur) démontre ma capacité à choisir et combiner les outils adaptés à chaque besoin.
+        <div class="competence-content">
+          <p class="competence-desc">
+            Concevoir, administrer et exploiter des bases de données relationnelles et non relationnelles.
+            Optimiser les requêtes, structurer les données et mettre en place des solutions de stockage adaptées aux besoins métier.
           </p>
+
+          <div class="tech-tags" style="margin-bottom:20px;">
+            <span>SQL</span><span>MariaDB</span><span>MySQL</span><span>Redis</span>
+            <span>Qdrant</span><span>Neo4J</span><span>Supabase</span><span>Oracle SQL</span>
+          </div>
+
+          <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
+          <div class="preuve-grid">
+            
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Architecture multi-modèles pour l'IA</h4>
+              <p>Mise en place d'une base vectorielle Qdrant pour la recherche sémantique, Redis pour la mémoire conversationnelle et MariaDB pour le stockage structuré.</p>
+            </div>
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage ELICAP — 2025</div>
+              <h4>Administration MySQL</h4>
+              <p>Gestion complète de la base de données de recrutement : modélisation des tables, vérification des contraintes d'intégrité, correction et mise à jour des structures SQL.</p>
+            </div>
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Application météo & BDD SYNOP</h4>
+              <p>Création et exploitation d'une base de données météorologique à partir de l'API SYNOP. Conception du schéma relationnel, import et visualisation des données.</p>
+              <a href="https://github.com/kanisira/Meteo-project"
+                target="_blank"
+                class="github-link">
+                🔗 Voir le projet sur GitHub
+              </a>
+            </div>
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Biodiversité aéroportuaire</h4>
+              <p>Mise en œuvre d'une architecture multi-modèles : SQL (Supabase), graphe (Neo4J) et vectorielle (Qdrant) pour la gestion et l'analyse de données environnementales.</p>
+            </div>
+          </div>
+
+          <div class="reflexion-box">
+            <div class="reflexion-title">Analyse réflexive</div>
+            <p>
+              À travers mes deux stages et mes projets académiques, j'ai acquis une maîtrise complète du cycle de vie des données : de la modélisation à l'optimisation en passant par l'exploitation.
+              Chez DiagoRisk, j'ai travaillé sur des volumes importants de données réelles, ce qui m'a permis de comprendre les enjeux de performance et de fiabilité en contexte professionnel.
+              La diversité des technologies utilisées (relationnelle, vectorielle, graphe, clé-valeur) démontre ma capacité à choisir et combiner les outils adaptés à chaque besoin.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -198,56 +234,69 @@
       <div class="competence-block reveal">
         <div class="competence-header">
           <div class="competence-num">2</div>
-          <h2>Conduire un projet</h2>
+          <h2>Réaliser une application complète</h2>
           <span class="niveau-badge">Niveau Confirmé</span>
         </div>
 
-        <p class="competence-desc">
-          Analyser les besoins, planifier les tâches, produire une documentation technique et assurer le suivi
-          d'un projet informatique en respectant les contraintes de délai et de qualité.
-        </p>
-
-        <div class="tech-tags" style="margin-bottom:20px;">
-          <span>GitLab</span><span>GitHub</span><span>MindView</span>
-          <span>Documentation</span><span>Analyse des besoins</span>
-        </div>
-
-        <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
-        <div class="preuve-grid">
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage DiagoRisk — 2026</div>
-            <h4>Gestion de projet technique</h4>
-            <p>Participation à la planification et au suivi des missions techniques. Rédaction de documentations avec PowerPoint.</p>
-          </div>
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage DiagoRisk — 2026</div>
-            <h4>Déploiement en production</h4>
-            <p>Pilotage du déploiement de l'assistant IA sur serveur Ubuntu avec Docker : planification des étapes, tests et mise en service de l'application.</p>
-          </div>
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage ELICAP — 2025</div>
-            <h4>Analyse et organisation du projet</h4>
-            <p>Analyse du processus de recrutement et création d'un organigramme facilitant l'intégration et la compréhension du projet par les nouveaux employés..</p>
-          </div>
-          <div class="preuve-card projet">
-            <div class="preuve-label">Projet académique — UPEC</div>
-            <h4>Application météo</h4>
-            <p>Conception et développement d'une application web suivant l'architecture MVC (Modèle, Vue, Contrôleur), de l'analyse des besoins à la livraison finale.</p>
-          </div>
-          <div class="preuve-card projet">
-            <div class="preuve-label">Projet académique — UPEC</div>
-            <h4>Services réseau</h4>
-            <p>Planification et mise en œuvre d'une infrastructure réseau complète sur machines virtuelles : DHCP, SSH, FTP et serveur Web, avec documentation des configurations.</p>
-          </div>
-        </div>
-
-        <div class="reflexion-box">
-          <div class="reflexion-title">Analyse réflexive</div>
-          <p>
-            La conduite de projet est une compétence que j'ai développée progressivement, d'abord dans le cadre académique puis en environnement professionnel réel.
-            Chez ELICAP, j'ai appris à traduire un besoin métier (le recrutement) en solutions techniques concrètes, en maintenant un dialogue constant avec les parties prenantes.
-            Chez DiagoRisk, j'ai géré des projets complexes impliquant plusieurs technologies simultanément, ce qui m'a appris à prioriser et à anticiper les dépendances entre les tâches.
+        <div class="competence-content">
+          <p class="competence-desc">
+            Partir des exigences d’un besoin métier pour concevoir, développer, tester et livrer une application complète,
+            en respectant les bonnes pratiques de développement logiciel.
           </p>
+
+          <div class="tech-tags" style="margin-bottom:20px;">
+            <span>PHP</span><span>Python</span><span>Java</span><span>HTML/CSS</span><span>JavaScript</span><span>TypeScript</span><span>FastAPI</span>
+            <span>Docker</span><span>Git</span><span>SQL</span>
+          </div>
+
+          <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
+          <div class="preuve-grid">
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Assistant IA IAgo</h4>
+              <p>Conception et développement d’un assistant conversationnel avec FastAPI, React, Docker, MariaDB, Redis et Qdrant.</p>
+            </div>
+
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage ELICAP — 2025</div>
+              <h4>Application de recrutement</h4>
+              <p>Participation au développement d’une application interne répondant aux besoins du processus de recrutement.</p>
+            </div>
+
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Application météo MVC</h4>
+              <p>Conception et développement d'une application web en architecture MVC (Model, View, Controller) dédiée à la visualisation des données météorologiques de la France, depuis l'analyse des besoins jusqu'à la livraison finale.</p>
+              <a href="https://github.com/kanisira/Meteo-project"
+                target="_blank"
+                class="github-link">
+                🔗 Voir le projet sur GitHub
+              </a>
+            </div>
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+
+              <h4>Analyse de la qualité de l'eau potable en France</h4>
+
+              <p>
+                  Conception et développement d'une application web en architecture MVC (Model, View, Controller) permettant d'analyser la qualité de l'eau potable en France. Création de la base de données à partir d'un cahier des charges, intégration de données statiques et dynamiques issues d'une API, développement des scripts Python d'importation et visualisation des résultats à l'aide d'un tableau de bord interactif.
+              </p>
+              <a href="https://github.com/kanisira/Eau-potable-en-France"
+                target="_blank"
+                class="github-link">
+                🔗 Voir le projet sur GitHub
+              </a>
+          </div>
+          </div>
+
+          <div class="reflexion-box">
+            <div class="reflexion-title">Analyse réflexive</div>
+            <p>
+              Cette compétence m’a permis de comprendre toutes les étapes de création d’une application complète :
+              analyse du besoin, conception, développement, tests et mise en service. Mes projets et stages m’ont appris
+              à transformer une demande concrète en solution fonctionnelle.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -255,58 +304,224 @@
       <div class="competence-block reveal">
         <div class="competence-header">
           <div class="competence-num">3</div>
+          <h2>Administrer une architecture réseau</h2>
+          <span class="niveau-badge">Niveau Confirmé</span>
+        </div>
+
+        <div class="competence-content">
+          <p class="competence-desc">
+            Déployer, configurer, sécuriser et administrer des services dans une architecture réseau,
+            en assurant leur disponibilité et leur bon fonctionnement.
+          </p>
+
+          <div class="tech-tags" style="margin-bottom:20px;">
+            <span>Linux</span><span>Ubuntu</span><span>Rocky Linux</span><span>Docker</span>
+            <span>SSH</span><span>Apache</span><span>SSL</span><span>VirtualBox</span>
+          </div>
+
+          <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
+          <div class="preuve-grid">
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Déploiement Docker</h4>
+              <p>Déploiement d’une architecture complète avec FastAPI, React, MariaDB, Redis et Qdrant sur un serveur Ubuntu.</p>
+            </div>
+
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Administration système</h4>
+              <p>Mise à jour de serveurs Linux, gestion des certificats SSL, sauvegardes et configuration d’un tunnel SSH sécurisé.</p>
+            </div>
+
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Services réseau</h4>
+              <p>Configuration de services DHCP, SSH, FTP et serveur Web sur machines virtuelles avec documentation technique.</p>
+            </div>
+          </div>
+
+          <div class="reflexion-box">
+            <div class="reflexion-title">Analyse réflexive</div>
+            <p>
+              Cette compétence m’a permis de développer des bases solides en administration système et réseau.
+              Grâce à mes projets et à mon stage chez DiagoRisk, j’ai appris à déployer des services, sécuriser une infrastructure
+              et maintenir un environnement fonctionnel.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ===== COMPÉTENCE 4 ===== -->
+      <div class="competence-block reveal">
+        <div class="competence-header">
+          <div class="competence-num">4</div>
+          <h2>Optimiser des solutions informatiques</h2>
+          <span class="niveau-badge">Niveau Confirmé</span>
+        </div>
+
+        <div class="competence-content">
+          <p class="competence-desc">
+            Sélectionner les algorithmes, structures de données et solutions techniques les plus adaptés afin d’améliorer
+            les performances et la fiabilité d’une application.
+          </p>
+
+          <div class="tech-tags" style="margin-bottom:20px;">
+            <span>SQL</span><span>MariaDB</span><span>Python</span><span>Qdrant</span>
+            <span>Redis</span><span>Indexation</span><span>Algorithmes</span>
+          </div>
+
+          <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
+          <div class="preuve-grid">
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Optimisation de bases de données</h4>
+              <p>Création d'index SQL sur des tables de plusieurs millions de lignes, réduisant significativement les temps de requête. Administration complète avec MariaDB et DBeaver.</p>
+            </div>
+
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Recherche sémantique</h4>
+              <p>Utilisation de Qdrant pour optimiser la recherche vectorielle dans l’assistant IA et améliorer la pertinence des réponses.</p>
+            </div>
+
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Données météorologiques</h4>
+              <p>Traitement, structuration et exploitation de données issues de l’API SYNOP pour produire une application performante.</p>
+            </div>
+          </div>
+
+          <div class="reflexion-box">
+            <div class="reflexion-title">Analyse réflexive</div>
+            <p>
+              J’ai appris que l’optimisation ne concerne pas seulement le code, mais aussi le choix des technologies,
+              des algorithmes et de l’organisation des données. Mes expériences m’ont permis de choisir des solutions
+              adaptées selon les contraintes de performance et de volume.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ===== COMPÉTENCE 5 ===== -->
+      <div class="competence-block reveal">
+        <div class="competence-header">
+          <div class="competence-num">5</div>
+          <h2>Conduire un projet</h2>
+          <span class="niveau-badge">Niveau Confirmé</span>
+        </div>
+
+        <div class="competence-content">
+          <p class="competence-desc">
+            Analyser les besoins, planifier les tâches, produire une documentation technique et assurer le suivi
+            d'un projet informatique en respectant les contraintes de délai et de qualité.
+          </p>
+
+          <div class="tech-tags" style="margin-bottom:20px;">
+            <span>GitLab</span><span>GitHub</span><span>MindView</span>
+            <span>Documentation</span><span>Analyse des besoins</span>
+          </div>
+
+          <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
+          <div class="preuve-grid">
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Gestion de projet technique</h4>
+              <p>Participation à la planification et au suivi des missions techniques. Rédaction de documentations avec PowerPoint.</p>
+            </div>
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Déploiement en production</h4>
+              <p>Pilotage du déploiement de l'assistant IA sur serveur Ubuntu avec Docker : planification des étapes, tests et mise en service de l'application.</p>
+            </div>
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage ELICAP — 2025</div>
+              <h4>Analyse et organisation du projet</h4>
+              <p>Analyse du processus de recrutement et création d'un organigramme facilitant l'intégration et la compréhension du projet par les nouveaux employés..</p>
+            </div>
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Application météo</h4>
+              <p>En tant que cheffe de projet, j'ai coordonné l'organisation et la répartition des tâches au sein de l'équipe. J'ai également participé à la conception et au développement d'une application web en architecture MVC (Model, View, Controller) dédiée à la visualisation des données météorologiques de la France, de l'analyse des besoins jusqu'à la livraison finale.</p>
+            </div>
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Services réseau</h4>
+              <p>Planification et mise en œuvre d'une infrastructure réseau complète sur machines virtuelles : DHCP, SSH, FTP et serveur Web, avec documentation des configurations.</p>
+            </div>
+          </div>
+
+          <div class="reflexion-box">
+            <div class="reflexion-title">Analyse réflexive</div>
+            <p>
+              La conduite de projet est une compétence que j'ai développée progressivement, d'abord dans le cadre académique puis en environnement professionnel réel.
+              Chez ELICAP, j'ai appris à traduire un besoin métier (le recrutement) en solutions techniques concrètes, en maintenant un dialogue constant avec les parties prenantes.
+              Chez DiagoRisk, j'ai géré des projets complexes impliquant plusieurs technologies simultanément, ce qui m'a appris à prioriser et à anticiper les dépendances entre les tâches.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== COMPÉTENCE 6 ===== -->
+      <div class="competence-block reveal">
+        <div class="competence-header">
+          <div class="competence-num">6</div>
           <h2>Collaborer au sein d'une équipe informatique</h2>
           <span class="niveau-badge">Niveau Confirmé</span>
         </div>
 
-        <p class="competence-desc">
-          Travailler efficacement en équipe, communiquer avec les différents acteurs d'un projet,
-          partager les connaissances techniques et s'intégrer dans un environnement professionnel.
-        </p>
-
-        <div class="tech-tags" style="margin-bottom:20px;">
-          <span>Communication</span><span>Travail d'équipe</span>
-          <span>Transmission</span><span>GitLab</span><span>GitHub</span><span>Trello</span>
-        </div>
-
-        <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
-        <div class="preuve-grid">
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage DiagoRisk — 2026</div>
-            <h4>Transmission des connaissances</h4>
-            <p>Création de guides techniques et présentation des travaux réalisés (assistant IA, sécurisation des API, infrastructure Docker), afin d'assurer la compréhension et l'évolution des solutions développées.</p>
-          </div>
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage DiagoRisk — 2026</div>
-            <h4>Collaboration avec les équipes métier</h4>
-            <p>Échanges réguliers avec les équipes pour comprendre les besoins liés aux risques climatiques agricoles.</p>
-          </div>
-          <div class="preuve-card stage">
-            <div class="preuve-label">Stage ELICAP — 2025</div>
-            <h4>Travail inter-équipes</h4>
-            <p>Collaboration active entre les équipes RH et informatique pour co-construire l'application de recrutement. Réunions fréquentes, écoute des besoins et ajustements réguliers.</p>
-          </div>
-          <div class="preuve-card projet">
-            <div class="preuve-label">Projet académique — UPEC</div>
-            <h4>Projets en équipe</h4>
-            <p>Développement collaboratif sur GitHub pour les projets météo et biodiversité : gestion des branches, revues de code, partage des tâches et intégration continue.</p>
-          </div>
-          <div class="preuve-card projet">
-            <div class="preuve-label">Projet académique — UPEC</div>
-            <h4>Biodiversité aéroportuaire</h4>
-            <p>Travail en équipe pluridisciplinaire : répartition des rôles (backend, data, IA), communication régulière.</p>
-          </div>
-        </div>
-
-        <div class="reflexion-box">
-          <div class="reflexion-title">Analyse réflexive</div>
-          <p>
-            La collaboration est au cœur de ma façon de travailler. Dans chacune de mes expériences, j'ai veillé à maintenir une communication claire et régulière avec toutes les parties prenantes.
-            J'ai appris que la réussite d'un projet technique repose autant sur les compétences humaines que sur les compétences techniques.
-            Ma capacité à m'adapter aux interlocuteurs qu'il s'agisse de développeurs, de professionnels RH m'a permis de contribuer efficacement à chaque projet.
+        <div class="competence-content">
+          <p class="competence-desc">
+            Travailler efficacement en équipe, communiquer avec les différents acteurs d'un projet,
+            partager les connaissances techniques et s'intégrer dans un environnement professionnel.
           </p>
+
+          <div class="tech-tags" style="margin-bottom:20px;">
+            <span>Communication</span><span>Travail d'équipe</span>
+            <span>Transmission</span><span>GitLab</span><span>GitHub</span><span>Trello</span>
+          </div>
+
+          <h3 style="font-size:1rem;color:#0f172a;margin:0 0 10px;">Preuves d'acquisition</h3>
+          <div class="preuve-grid">
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Transmission des connaissances</h4>
+              <p>Création de guides techniques et présentation des travaux réalisés (assistant IA, sécurisation des API, infrastructure Docker), afin d'assurer la compréhension et l'évolution des solutions développées.</p>
+            </div>
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage DiagoRisk — 2026</div>
+              <h4>Collaboration avec les équipes métier</h4>
+              <p>Échanges réguliers avec les équipes pour comprendre les besoins liés aux risques climatiques agricoles.</p>
+            </div>
+            <div class="preuve-card stage">
+              <div class="preuve-label">Stage ELICAP — 2025</div>
+              <h4>Travail inter-équipes</h4>
+              <p>Collaboration active entre les équipes RH et informatique pour co-construire l'application de recrutement. Réunions fréquentes, écoute des besoins et ajustements réguliers.</p>
+            </div>
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Projets en équipe</h4>
+              <p>Développement collaboratif sur GitHub pour les projets météo et biodiversité : gestion des branches, revues de code, partage des tâches et intégration continue.</p>
+            </div>
+            <div class="preuve-card projet">
+              <div class="preuve-label">Projet académique — UPEC</div>
+              <h4>Biodiversité aéroportuaire</h4>
+              <p>Travail en équipe pluridisciplinaire : répartition des rôles (backend, data, IA), communication régulière.</p>
+            </div>
+          </div>
+
+          <div class="reflexion-box">
+            <div class="reflexion-title">Analyse réflexive</div>
+            <p>
+              La collaboration est au cœur de ma façon de travailler. Dans chacune de mes expériences, j'ai veillé à maintenir une communication claire et régulière avec toutes les parties prenantes.
+              J'ai appris que la réussite d'un projet technique repose autant sur les compétences humaines que sur les compétences techniques.
+              Ma capacité à m'adapter aux interlocuteurs qu'il s'agisse de développeurs, de professionnels RH m'a permis de contribuer efficacement à chaque projet.
+            </p>
+          </div>
         </div>
       </div>
+      
 
     </div>
   </section>
@@ -359,5 +574,14 @@
   <div class="wave-divider"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,70 C480,0 960,70 1440,0 L1440,70 L0,70 Z" fill="#ffffff"/></svg></div>
   <footer class="footer"><div class="container">© <span id="year"></span> Kani Doucouré — Tous droits réservés</div></footer>
   <script src="js/nav.js" defer></script>
+  <script>
+    // Accordéon : afficher/cacher le contenu d'une compétence au clic
+    document.querySelectorAll('.competence-block').forEach(function (block) {
+      var header = block.querySelector('.competence-header');
+      header.addEventListener('click', function () {
+        block.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
